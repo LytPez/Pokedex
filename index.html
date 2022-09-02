@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="./favicons/favicon-16x16.png">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script defer src="./js/script.js"></script>
+  <title>Pokédex</title>
+</head>
+<body>
+  <main>
+    <img src="#" alt="pokemon" class="pokemon_image">
+
+    <h1 class="pokemon_data">
+      <span class="pokemon_number"></span> -
+      <span class="pokemon_name"></span>
+    </h1>
+
+    <form class="form">
+      <input 
+        type="search"
+        class="input_search"
+        placeholder="Name or Number"
+        required
+      >
+      <button class="btn-status" id="button-status">Detalhes</button>
+    </form>
+    <div class="container-status">
+      <div class="status-image">
+        <img src="#" alt="pokemon" class="poke-image">
+      </div>
+      <div class="container-detalhes ">      
+        <div class="div-type">
+          <h5>Type:</h5>
+          <p class="type"></p>
+        </div>
+        <div class="divisao1"></div>
+        <div class="div-ability">
+          <h5>Ability:</h5>
+          <p class="ability"></p>
+        </div>
+        <div class="divisao2"></div>
+        <div class="div-description">
+          <h5>Description:</h5>
+          <p class="description"></p>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      
+      <button class="button btn-prev">Prev &lt;</button>
+      <button class="button btn-next">Next &gt;</button>
+    </div>
+    <img src="./images/pokedex.png" class="pokedex" alt="pokedex">
+  </main>
+</body>
+</html>
