@@ -34,7 +34,6 @@ const renderPokemon= async (pokemon)=>{
   pokemonName.innerHTML='Loading ...';
   pokemonNumber.innerHTML='';
   const data = await fetchPokemon(pokemon);
-
   if(data){
     pokemonImage.style.display='block';
     pokemonName.innerHTML=data.name;
